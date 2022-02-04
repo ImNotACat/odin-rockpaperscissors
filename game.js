@@ -11,8 +11,8 @@ function playRound(playerSelection, computerSelection) {
     // make it case insensitive
     // PROMPT user for selection
 
-const playerSelection = "rock";
-const computerSelection = computerPlay();
+//const playerSelection = "rock";
+//const computerSelection = computerPlay();
 }
 
 function game() {
