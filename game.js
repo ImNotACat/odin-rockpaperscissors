@@ -83,3 +83,5 @@ function game() {
         console.log ("You have won lost the game, sad times. The score is " + playerScore + " to " + computerScore);
     }
 }
+
+game();
