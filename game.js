@@ -2,7 +2,7 @@ function computerPlay() {
     // randomly enters rock, paper or scissors
     var options = ["Rock", "Paper", "Scissors"];
     const randomPick = options[Math.floor(Math.random() * options.length)];
-    console.log(randomPick);
+    console.log("Computer plays: " + randomPick);
 }
 
 function playRound(playerSelection, computerSelection) {
