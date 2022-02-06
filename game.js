@@ -9,11 +9,11 @@ function playRound(number) {
 
     // PROMPT user for selection 
     //var userPick = window.prompt("Rock, paper or scissors?");
-    var userPick = window.prompt("Round " + number + " of 5. Rock, paper or scissors?");
+    var user = window.prompt("Round " + number + " of 5. Rock, paper or scissors?");
     var computerSelection = computerPlay();
 
     // make it case insensitive
-    userPick = userPick.toLowerCase();
+    userPick = user.toLowerCase();
 
     if (userPick == "rock") {
         if (computerSelection == "rock") {
