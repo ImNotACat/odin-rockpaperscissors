@@ -13,47 +13,47 @@ function playRound(number) {
     var computerSelection = computerPlay();
 
     // make it case insensitive
-    userPick.toLowerCase;
+    userPick.toLowerCase();
 
     if (userPick == "rock") {
         if (computerSelection == "rock") {
-            console.log("You played rock. Computer played rock.");
+            window.alert("You played rock. Computer played rock.");
             return "tie";
         }
         else if (computerSelection == "paper") {
-            console.log("You played rock. Computer played paper.");
+            window.alert("You played rock. Computer played paper.");
             return "lost";
         }
         else {
-            console.log("You played rock. Computer played scissors.");
+            window.alert("You played rock. Computer played scissors.");
             return "won";
         }
     }
     else if (userPick == "paper") {
         if (computerSelection == "rock") {
-            console.log("You played paper. Computer played rock.");
+            window.alert("You played paper. Computer played rock.");
             return "won";
         }
         else if (computerSelection == "paper") {
-            console.log("You played paper. Computer played paper.");
+            window.alert("You played paper. Computer played paper.");
             return "tie";
         }
         else {
-            console.log("You played paper. Computer played scissors.");
+            window.alert("You played paper. Computer played scissors.");
             return "lost";
         }
     }
     else if (userPick == "scissors") {
         if (computerSelection == "rock") {
-            console.log("You played scissors. Computer played rock.");
+            window.alert("You played scissors. Computer played rock.");
             return "lost";
         }
         else if (computerSelection == "paper") {
-            console.log("You played scissors. Computer played paper.");
+            window.alert("You played scissors. Computer played paper.");
             return "won";
         }
         else {
-            console.log("You played scissors. Computer played scissors.");
+            window.alert("You played scissors. Computer played scissors.");
             return "tie";
         }
     }
@@ -71,29 +71,27 @@ function game() {
 
         result = playRound(i+1);
         if (result == "won") {
-            console.log ("You won!");
+            window.alert ("You won!");
             playerScore++;
         }
         else if (result == "lost") {
-            console.log ("You lost :(");
+            window.alert ("You lost :(");
             computerScore++;
         }
         else if (result == "tie") {
-            console.log ("It's a tie");
-        }
-        else if (result == "error") {
-            i--
+            window.alert ("It's a tie");
         }
         else {
-            console.log ("Sorry, there was an error. Try again!");
+            i--;
+            window.alert ("Sorry, there was an error. Try again!");
         }
     }
 
     if (playerScore > computerScore) {
-        console.log ("You have won the game! Hurrah! The score is " + playerScore + " to " + computerScore);
+        window.alert  ("You have won the game! Hurrah! The score is " + playerScore + " to " + computerScore);
     }
     else if (playerScore < computerScore) {
-        console.log ("You have won lost the game, sad times. The score is " + playerScore + " to " + computerScore);
+        window.alert  ("You have won lost the game, sad times. The score is " + playerScore + " to " + computerScore);
     }
 }
 
