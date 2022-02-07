@@ -13,7 +13,7 @@ function playRound(number) {
     var computerSelection = computerPlay();
 
     // make it case insensitive
-    userPick = user.toLowerCase();
+    userPick = user.toLowerCase().trim();
 
     if (userPick == "rock") {
         if (computerSelection == "rock") {
