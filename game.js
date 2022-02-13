@@ -5,11 +5,11 @@ function computerPlay() {
     return randomPick;
 }
 
-function playRound(number) {
+function playRound() {
 
     // PROMPT user for selection 
     //var userPick = window.prompt("Rock, paper or scissors?");
-    var user = window.prompt("Round " + number + " of 5. Rock, paper or scissors?");
+    var user = window.prompt("Rock, paper or scissors?");
     var computerSelection = computerPlay();
 
     // make it case insensitive
@@ -67,24 +67,20 @@ function game() {
     var playerScore = 0;
     var computerScore = 0;
 
-    for (let i = 0; i < 5; i++) {
-
-        result = playRound(i+1);
-        if (result == "won") {
-            window.alert ("You won!");
-            playerScore++;
-        }
-        else if (result == "lost") {
-            window.alert ("You lost :(");
-            computerScore++;
-        }
-        else if (result == "tie") {
-            window.alert ("It's a tie");
-        }
-        else {
-            i--;
-            window.alert ("Sorry, there was an error. Try again!");
-        }
+    result = playRound();
+    if (result == "won") {
+        window.alert ("You won!");
+        playerScore++;
+    }
+    else if (result == "lost") {
+        window.alert ("You lost :(");
+        computerScore++;
+    }
+    else if (result == "tie") {
+        window.alert ("It's a tie");
+    }
+    else {
+        window.alert ("Sorry, there was an error. Try again!");
     }
 
     if (playerScore > computerScore) {
