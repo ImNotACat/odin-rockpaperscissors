@@ -1,15 +1,41 @@
+body {
+    background: rgb(51, 51, 51); 
+}
+
+.header {
+    background: rgb(51, 51, 51);
+    text-align: center;
+    font-size: large;
+    padding: 20px;  
+}
+
+.header div {
+    font-family: Arial, Helvetica, sans-serif;
+      
+}
+
 .main {
     display: flex;
 }
 
 .main div {
-    background: black;
-    border: 4px white;;
-    height: 250px;
+    background: rgb(51, 51, 51);
+    border: 4px white;
     flex: 1 1 0%;
     text-align: center;
 }
 
 .main .button {
-    flex: 2 1 0%;
+    height: 200px;
+    border: 2px solid aquamarine;
+    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+    margin: 10px;
+    flex: 0 0  200px;
+
 }
+
+.main .button p {
+    line-height: 13; 
+    display: inline-block;
+    vertical-align: middle;
+  }
