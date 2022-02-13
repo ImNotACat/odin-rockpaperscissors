@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+}
+
+.main div {
+    background: black;
+    border: 4px white;;
+    height: 250px;
+    flex: 1 1 0%;
+    text-align: center;
+}
+
+.main .button {
+    flex: 2 1 0%;
+}
