@@ -5,11 +5,11 @@ function computerPlay() {
     return randomPick;
 }
 
-function playRound() {
+function playRound(user) {
 
     // PROMPT user for selection 
     //var userPick = window.prompt("Rock, paper or scissors?");
-    var user = window.prompt("Rock, paper or scissors?");
+    // var user = window.prompt("Rock, paper or scissors?");
     var computerSelection = computerPlay();
 
     // make it case insensitive
@@ -63,6 +63,7 @@ function playRound() {
 }
 
 function game() {
+
     // play playRound 5 times
     var playerScore = 0;
     var computerScore = 0;
@@ -91,4 +92,18 @@ function game() {
     }
 }
 
-game();
+//game();
+
+let buttons = document.querySelectorAll(".button");
+console.log(buttons);
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        /*const id = button.querySelector("id");
+        userPick = id;*/
+        console.log("User has chosen " + button.id);
+
+        playRound(button.id);
+
+    }) 
+});
