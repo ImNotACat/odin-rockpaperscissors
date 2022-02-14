@@ -36,3 +36,8 @@ body {
     display: inline-block;
     vertical-align: middle;
   }
+
+.alert {
+    text-align: center;
+    color: white;
+}

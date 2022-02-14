@@ -17,15 +17,23 @@ function playRound(user) {
 
     if (userPick == "rock") {
         if (computerSelection == "rock") {
-            window.alert("You played rock. Computer played rock.");
+            let message = document.getElementById("message");
+            message.innerHTML = "You played rock. Computer played rock.";
+            //window.alert("You played rock. Computer played rock.");
             return "tie";
         }
         else if (computerSelection == "paper") {
-            window.alert("You played rock. Computer played paper.");
+
+            let message = document.getElementById("message");
+            message.innerHTML = "You played rock. Computer played rock.";
+            //window.alert("You played rock. Computer played paper.");
             return "lost";
         }
         else {
-            window.alert("You played rock. Computer played scissors.");
+
+            let message = document.getElementById("message");
+            message.innerHTML = "You played rock. Computer played rock.";
+            //window.alert("You played rock. Computer played scissors.");
             return "won";
         }
     }
