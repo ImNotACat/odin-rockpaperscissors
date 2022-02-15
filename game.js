@@ -142,8 +142,3 @@ buttons.forEach((button) => {
 
     }) 
 });
-
-
-
-game();
-
