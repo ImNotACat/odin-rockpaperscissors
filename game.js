@@ -8,7 +8,7 @@ function computerPlay() {
 function playRound(user) {
 
     // PROMPT user for selection 
-    //var userPick = window.prompt("Rock, paper or scissors?");
+    // var userPick = window.prompt("Rock, paper or scissors?");
     // var user = window.prompt("Rock, paper or scissors?");
     var computerSelection = computerPlay();
 
@@ -19,49 +19,50 @@ function playRound(user) {
         if (computerSelection == "rock") {
             let message = document.getElementById("message");
             message.innerHTML = "You played rock. Computer played rock.";
-            //window.alert("You played rock. Computer played rock.");
             return "tie";
         }
         else if (computerSelection == "paper") {
-
             let message = document.getElementById("message");
-            message.innerHTML = "You played rock. Computer played rock.";
-            //window.alert("You played rock. Computer played paper.");
+            message.innerHTML = "You played rock. Computer played paper.";
             return "lost";
         }
         else {
-
             let message = document.getElementById("message");
-            message.innerHTML = "You played rock. Computer played rock.";
-            //window.alert("You played rock. Computer played scissors.");
+            message.innerHTML = "You played rock. Computer played scissors.";
             return "won";
         }
     }
     else if (userPick == "paper") {
         if (computerSelection == "rock") {
-            window.alert("You played paper. Computer played rock.");
+            let message = document.getElementById("message");
+            message.innerHTML = "You played paper. Computer played rock.";
             return "won";
         }
         else if (computerSelection == "paper") {
-            window.alert("You played paper. Computer played paper.");
+            let message = document.getElementById("message");
+            message.innerHTML = "You played paper. Computer played paper.";
             return "tie";
         }
         else {
-            window.alert("You played paper. Computer played scissors.");
+            let message = document.getElementById("message");
+            message.innerHTML = "You played paper. Computer played scissors.";
             return "lost";
         }
     }
     else if (userPick == "scissors") {
         if (computerSelection == "rock") {
-            window.alert("You played scissors. Computer played rock.");
+            let message = document.getElementById("message");
+            message.innerHTML = "You played scissors. Computer played rock.";
             return "lost";
         }
         else if (computerSelection == "paper") {
-            window.alert("You played scissors. Computer played paper.");
+            let message = document.getElementById("message");
+            message.innerHTML = "You played scissors. Computer played paper.";
             return "won";
         }
         else {
-            window.alert("You played scissors. Computer played scissors.");
+            let message = document.getElementById("message");
+            message.innerHTML = "You played scissors. Computer played scissors.";
             return "tie";
         }
     }
@@ -70,6 +71,8 @@ function playRound(user) {
     }
 }
 
+/*
+THIS RELATED TO THE FIRST PART OF THE EXERCISE - NOW OBSOLETE
 function game() {
 
     // play playRound 5 times
@@ -98,20 +101,47 @@ function game() {
     else if (playerScore < computerScore) {
         window.alert  ("You have won lost the game, sad times. The score is " + playerScore + " to " + computerScore);
     }
-}
+} */
 
 //game();
-
+var playerScore = 0;
+var computerScore = 0;
 let buttons = document.querySelectorAll(".button");
 console.log(buttons);
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        /*const id = button.querySelector("id");
-        userPick = id;*/
         console.log("User has chosen " + button.id);
 
-        playRound(button.id);
+        result = playRound(button.id);
+        if (result == "won") {
+            playerScore++;
+        }
+        else if (result == "lost") {
+            computerScore++;
+        }
+        else if (result == "tie") {
+            playerScore = playerScore;
+        }
+
+        // update the score
+        let score = document.getElementById("score");
+        if (playerScore == 5) {
+            score.innerHTML = "YOU WON! The score was " + playerScore + "-" + computerScore;
+            playerScore = 0;
+            computerScore = 0;
+        }
+        else if (computerScore == 5) {
+            score.innerHTML = "COMPUTER WON! The score was " + playerScore + "-" + computerScore;
+            playerScore = 0;
+            computerScore = 0;
+        }
+        else{
+            score.innerHTML = "Player score: " + playerScore + ". Computer score: " + computerScore;
+        }
 
     }) 
 });
+
+
+

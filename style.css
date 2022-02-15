@@ -1,13 +1,14 @@
 body {
-    background: rgb(51, 51, 51); 
+    background: rgb(206, 247, 247); 
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
-    background: rgb(51, 51, 51);
+    background: rgb(206, 247, 247);
     text-align: center;
     font-size: 40px;
     padding: 20px;  
+    color: rgb(29, 31, 56);
 }
 
 .main {
@@ -15,7 +16,7 @@ body {
 }
 
 .main div {
-    background: rgb(51, 51, 51);
+    background: rgb(206, 247, 247);
     border: 4px white;
     flex: 1 1 0%;
     text-align: center;
@@ -23,7 +24,7 @@ body {
 
 .main .button {
     height: 200px;
-    border: 2px solid aquamarine;
+    border: 2px solid rgb(19, 39, 32);
     border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
     margin: 10px;
     flex: 0 0  200px;
@@ -32,12 +33,18 @@ body {
 }
 
 .main .button p {
-    line-height: 10; 
+    line-height: 8; 
     display: inline-block;
     vertical-align: middle;
   }
 
 .alert {
     text-align: center;
-    color: white;
+    color: rgb(29, 31, 56);
+    padding: 20px;
+}
+.score {
+    text-align: center;
+    color: rgb(29, 31, 56);
+    padding: 20px;
 }
