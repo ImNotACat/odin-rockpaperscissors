@@ -145,3 +145,5 @@ buttons.forEach((button) => {
 
 
 
+game();
+
