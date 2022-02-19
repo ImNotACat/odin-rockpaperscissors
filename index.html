@@ -4,10 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+    </style>
     <title>Rock Paper Scissors - play now!</title>
 </head>
 <body>
-    <div class="header">Basic page for game</div> 
+    <div class="header">Play!</div> 
     <div class="main">
         <div class="side"></div>
         <div class="button" id="rock"><p>Rock</p></div>
@@ -16,7 +19,10 @@
         <div class="side"></div>
     </div>
     <div class="alert" id="message">Play!</div>
-    <div class="score" id="score">Player score: 0. Computer score: 0</div>
+    <div class="score" id="score">
+        <div>Player score: 0. </div>
+        <div>Computer score: 0</div>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
