@@ -1,14 +1,15 @@
 body {
-    background: rgb(206, 247, 247); 
+    background: #f9858b; 
     font-family: Arial, Helvetica, sans-serif;
+    color: #761137;
 }
 
 .header {
-    background: rgb(206, 247, 247);
+    background: #f9858b;
     text-align: center;
     font-size: 40px;
     padding: 20px;  
-    color: rgb(29, 31, 56);
+    color: #761137;
 }
 
 .main {
@@ -16,7 +17,7 @@ body {
 }
 
 .main div {
-    background: rgb(206, 247, 247);
+    background: #f9858b;
     border: 4px white;
     flex: 1 1 0%;
     text-align: center;
@@ -24,8 +25,8 @@ body {
 
 .main .button {
     height: 200px;
-    border: 2px solid rgb(19, 39, 32);
-    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+    border: 2px solid #761137;
+    border-radius: 40px;
     margin: 10px;
     flex: 0 0  200px;
     font-size: 20px;
@@ -36,15 +37,22 @@ body {
     line-height: 8; 
     display: inline-block;
     vertical-align: middle;
+    
   }
 
 .alert {
     text-align: center;
-    color: rgb(29, 31, 56);
+    color: #761137;
     padding: 20px;
 }
 .score {
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
-    color: rgb(29, 31, 56);
+    color: #761137;
     padding: 20px;
 }
+
+.score div{
+    display: inline;
+}
+
