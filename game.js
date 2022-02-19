@@ -137,7 +137,8 @@ buttons.forEach((button) => {
             computerScore = 0;
         }
         else{
-            score.innerHTML = "Player score: " + playerScore + ". Computer score: " + computerScore;
+            playerscore.innerHTML = playerScore;
+            computerscore.innerHTML = computerScore;
         }
 
     }) 

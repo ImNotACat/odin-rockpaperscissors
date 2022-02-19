@@ -7,9 +7,11 @@ body {
 .header {
     background: #f9858b;
     text-align: center;
-    font-size: 40px;
+    font-size: 70px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     padding: 20px;  
     color: #761137;
+    font-family: 'Luckiest Guy', cursive;    
 }
 
 .main {
@@ -18,14 +20,14 @@ body {
 
 .main div {
     background: #f9858b;
-    border: 4px white;
+    border: 4px #f5d9db;
     flex: 1 1 0%;
     text-align: center;
 }
 
 .main .button {
     height: 200px;
-    border: 2px solid #761137;
+    border: 8px solid #ffe9ea;
     border-radius: 40px;
     margin: 10px;
     flex: 0 0  200px;
@@ -48,11 +50,22 @@ body {
 .score {
     font-family: 'Luckiest Guy', cursive;
     text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    height: 35px;
     color: #761137;
     padding: 20px;
 }
 
 .score div{
     display: inline;
+    padding: 5px;
+}
+
+.scorenumber {
+    color: #761137;
+    border-radius: 35%;
+    font-size: 40;
+    text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white;
 }
 
